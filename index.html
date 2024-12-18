@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>神庙寻宝游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 添加背景音乐 -->
+    <audio id="background-music" autoplay loop>
+        <source src="asset/background.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+
+    <h1 style="text-align: center;">神庙寻宝游戏</h1>
+    
+    <div class="game-container">
+        <div id="content" class="content"></div> <!-- 显示从txt文件加载的内容 -->
+        <div id="map" class="map"></div>
+    </div>
+    <div id="message"></div>
+    <div id="inputSection">
+        <input type="text" id="userInput" placeholder="请输入答案">
+        <button id="submitButton">提交</button>
+        <div id="inputError"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

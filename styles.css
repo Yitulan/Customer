@@ -1,0 +1,91 @@
+/* 游戏容器 */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* 显示文本的内容区域 */
+.content {
+    width: 300px; /* 固定宽度 */
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    max-height: 600px;
+    overflow-y: auto; /* 如果文本超出区域，添加滚动条 */
+    font-size: 16px;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    width: 600px;
+    height: 600px;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.guard {
+    background-color: black;
+}
+
+.treasure {
+    background-color: yellow;
+}
+
+#message {
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+    margin-top: 20px;
+    white-space: pre-line;
+}
+
+#inputSection {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#inputError {
+    color: red;
+    font-size: 16px;
+}
+
+.library {
+    background-color: #f0e68c;
+}
+
+.activity-room {
+    background-color: #add8e6;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.content{
+    width: 300px; /* 给内容区域设置一个固定宽度 */
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+}
